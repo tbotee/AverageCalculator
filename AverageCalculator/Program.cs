@@ -12,7 +12,8 @@ namespace AverageCalculator
 
             for (var i  = 1; i <=2 ; i++)
             {
-                var file = GetNumbersFromFile(i, out var numbers);
+                var file = $"numbers{i}.txt";
+                var numbers = FileReader.ReadFile(file);
                 ShowAverage(meanAverage, numbers, file);
                 ShowAverage(modeAverage, numbers, null);
                 Display.DisplayNewLine();
@@ -23,13 +24,6 @@ namespace AverageCalculator
         {
             averageCalculator.SetNumbers(numbers);
             Display.DisplayMessage(file, averageCalculator.GetType(), averageCalculator.CalculateAverage());
-        }
-
-        private static string GetNumbersFromFile(int i, out int[] numbers)
-        {
-            var file = $"numbers{i}.txt";
-            numbers = FileReader.ReadFile(file);
-            return file;
         }
     }
 }
