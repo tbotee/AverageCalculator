@@ -1,6 +1,8 @@
 namespace Average_Calculator;
 
-public interface IAverageCalculator
-{
-    
+internal interface IAverageCalculator
+{ 
+    double CalculateAverage();
+
+    string GetType();
 }
