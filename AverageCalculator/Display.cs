@@ -1,4 +1,4 @@
-namespace Average_Calculator;
+namespace AverageCalculator;
 
 public static class Display
 {

@@ -1,4 +1,4 @@
-namespace Average_Calculator;
+namespace AverageCalculator;
 
 using System.IO;
 using System.Linq;

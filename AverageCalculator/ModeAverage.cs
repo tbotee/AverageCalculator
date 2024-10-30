@@ -1,24 +1,24 @@
-namespace Average_Calculator;
+namespace AverageCalculator;
 
 public class ModeAverage: IAverageCalculator
 {
-    private int[]? _numbers;
+    public int[]? Numbers;
 
-    public int[] Numbers
+    public void SetNumbers(int[] numbers)
     {
-        set => _numbers = value;
+        Numbers = numbers;
     }
 
     public double CalculateAverage()
     {
-        if (_numbers == null || _numbers.Length == 0)
+        if (Numbers == null || Numbers.Length == 0)
             throw new InvalidOperationException("No numbers to calculate the average.");
 
         // do logic of Mode Average
-        return _numbers.Average();
+        return Numbers.Average();
     }
 
-    public string GetType()
+    public new string GetType()
     {
         return "Mode";
     }

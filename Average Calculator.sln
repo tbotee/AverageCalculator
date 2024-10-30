@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average Calculator", "Average Calculator\Average Calculator.csproj", "{25BB3509-FD9D-4131-8800-2E7050CDCA7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageCalculator", "AverageCalculator\AverageCalculator.csproj", "{25BB3509-FD9D-4131-8800-2E7050CDCA7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
